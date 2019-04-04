@@ -17,7 +17,7 @@ a {
 }
 
 hr{
-    border-color: #F06;
+    border-color: #FF6165;
     border-style: dashed;
 }
 
@@ -55,8 +55,8 @@ hr{
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  background: #FF6165;
+  color: #FF6165;
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ hr{
 }
 
 .widebody a:hover {
-  background: #F06;
+  background: #FF6165;
   color: #FFF;
   text-decoration: none;
 }
