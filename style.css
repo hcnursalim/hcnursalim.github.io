@@ -14,14 +14,11 @@ a {
   color: #000;
 }
 
-div {
-  border: solid 1px #000;
-}
 
 .header {
   background: #fff;
   color: #000;
-  height: 900px;
+  height: 700px;
   padding: 30px 30px 30px;
 }
 
