@@ -24,7 +24,7 @@ hr{
 .header {
   text-align: center;
   color: #000;
-  height: 625px;
+  height: 600px;
   padding: 30px 30px 30px;
 }
 
@@ -79,4 +79,8 @@ hr{
   background: #FF6165;
   color: #FFF;
   text-decoration: none;
+}
+
+.content {
+  text-align: left;
 }
