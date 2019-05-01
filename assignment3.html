@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Hannah's HCDE 598 Digital Fabrication Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <link rel="icon" href="favicon-32x32.png" type="image"/>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Hannah's Assignment 3:
+            <br>3D Printing & Laser Cutting a Lamp!
+            </h1>
+            <p>
+            <img src="Lamp_Light.JPG" width=400></a>
+            <img src="Lamp_TopSide.JPG" width=400></a>
+            </p>
+            <p>
+            Documentation and process are down below.
+            </p>
+            <hr></hr>
+
+            <b><h3>Documentation</h3></b>
+            <b>Lamp Source Files:</b>
+            <br>
+            <a href="https://drive.google.com/file/d/1mux_vgalhFoYEiVMsBEQ2o-CefytQyNb/view?usp=sharing" target="_blank">Illustrator File for Panels</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1s8A-fUNkbZCaTKDqQ-cJ4qUOtA9pbvwp/view?usp=sharing" target="_blank">Rhino File for Top Connectors</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1LqDsZ9BD98Ngq-cL1i-eY3VbnjvaCqM4/view?usp=sharing" target="_blank>">Rhino File for Base Connectors</a>
+            <br>
+            <a href="https://drive.google.com/file/d/17_Dn8TvDfTirUJkVdLbOifc0PnWcnFhj/view?usp=sharing" target="_blank">Grasshopper File for Top Connectors</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1APIwGqyn5KIJAg-NsaoUh5pUFrKFc8hS/view?usp=sharing" target="_blank">Grasshopper File for Base Connectors</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1cVnoaMCHNmVoPnsgSyybf2Nt_baPt9fi/view?usp=sharing" target="_blank">STL File for Top Connectors</a>
+            <br>
+            <a href="https://drive.google.com/file/d/13bQ94okSNg5SsjgD01DxknHcxcN4k2eg/view?usp=sharing" target="_blank">STL File for Base Connectors</a>
+            <p></p>
+
+            <b>Grasshopper Snippets</b>
+            <br>
+            <img src="GH_BaseConnector.png" width=600></a>
+            <br>
+            <font size="2"><i>Grasshopper for Base Connectors</i></font>
+            <p></p>
+            <img src="GH_TopConnector.png" width=600></a>
+            <br>
+            <font size="2"><i>Grasshopper for Top Connectors</i></font>
+            <p></p>
+
+            <b>Rhino Export Settings:</b>
+            <br>
+            <img src="RhinoExport.png" width="400"></a>
+            <p></p>
+
+            <b>3D Print Settings:</b>
+            <br>
+            <img src="3DPrintSettings.png" width="400"></a>
+            <p></p>
+
+            <b>Some Photos of Process & Product:</b>
+            <br>
+            <img src="3D_Base_Print1.JPG" width="400"></a>
+            <img src="3D_Top_Print1.JPG" width="400"></a>
+            <img src="Connectors_Finished.jpg" width="400"></a>
+            <img src="Lamp.JPG" width="400"></a>
+            <br>
+            <img src="3DPrint_Base.gif" width="300"></a>
+            <br>
+            <img src="3DPrint_Top.gif" width="400"></a>
+
+            <hr></hr>
+
+            <div class="content">
+            <center><b><h3>Design</h3></b></center>
+            For this assignment, we had to design a lamp using both the 3D printer and laser cutter.
+            I started thinking about how I wanted to create my lamp and ended up choosing to create a cube shape lamp.
+            The press fit kits inspired me to create connector pieces where you can slide the panels into and have them stay in place.
+            For the panels themselves, I chose to use cardboard and to use the laser cutter to make patterns, so light would shine through.
+            I love stars, so I used shooting stars, stars, and a moon on the panel designs.
+            I consciously made a decision to have gaps between my panels to have as much light come through as possible.
+            My design idea had connectors at the base and connectors at the top to hold together the 6 panels (1 base, 1 top, 4 to go around the middle).
+            Each connector has 2 slots to hold 2 panels (base panel and middle panel or top panel and middle panel).
+
+            <center><b><h3>Process</h3></b></center>
+            <b>Step 1: Light Innered & Measuring</b>
+            <br>
+            My initial light innered was a mini LED flashlight we made in HCDE 539 last quarter.
+            Using my calipers, I measured its dimensions and used the measurements to create the lampshade.
+            <p></p>
+            <b>Step 2: Sketch idea for lamp shade</b>
+            <br>
+            To execute my idea, I first sketched out how I pictured the cube shaped lamp and the corresponding connector pieces.
+            I cut up thin cardboard to physically visualize if my connector idea would work.
+            Through the sketches and physical visualization, I had a good feeling about my design.
+            <p>
+            <center>
+              <img src="A3_Sketch1.JPG" width="400" class="rotate90"></a>
+              <img src="A3_Sketch2.JPG" width="400" class="rotate90"></a>
+              <br>
+              <font size="2"><i>Sketches for Lamp Idea</i></font></center>
+            </p>
+            <b>Step 3: Creating the connector piece with Rhino & Grasshopper</b>
+            <br>
+            Since the connectors were going to be 3D printed, I used Rhino & Grasshopper to create the pieces.
+            I chose to use Grasshopper because of the parameterization features.
+            Just in case my measurements were off, I'd be able to easily adjust them using the number sliders.
+            I did struggle a little bit creating the 3D figure of my connector.
+            I tried using the box tool but had issues with region difference since region difference is used on surfaces, and it couldn't convert box to surface.
+            I used Google to help me, but I had a hard time understanding some of the forums.
+            What I ended up doing was using the demo Nadya did in class where she used 2D shapes then moved one along Z then lofted and capped it to guide me.
+            I used the Grasshopper structure for my square shape from last week's assignment and tailored it to what I had in mind for my 2D connector shape.
+            After I baked the 2D shape, I made a copy of it and moved the copy in the Z direction. I lofted the two shapes and capped them and ta-da! I had my 3D connector piece.
+            Because I had never 3D printed before and was unsure how sturdy the piece would be, I made my test piece on the bigger side 1in x 1.2in x 1.5in.
+            <p>
+              <center>
+                <img src="Rhino_A3_Test.png" width=500></a>
+                <br>
+                <font size="2"><i>Rhino Image of My First Test Piece</i></font>
+              </center>
+            </p>
+
+            <b>Step 4: Test print</b>
+            <br>
+            I went to office hours Thursday night to do a test print of my connector piece.
+            Joshua gave me advice on the export settings from Rhino to STL and helped me set up the DigiLab file. I made sure there was no overhang by looking at my shape from all angles.
+            Josh walked me through the settings like the material, the quality of the print, infill percentage, support or no support, and build plate adhesion or none.
+            For this test print, Josh said I would be okay with no build plate adhesion (aka skirt), so I chose no. Once the settings were applied, it was time to save the file to my USB and print!
+            <p>
+              <center>
+                <img src="TestPrint1.png" width="600"></a>
+                <br>
+                <font size="2"><i>Test Print Settings</i></font>
+              </center>
+            </p>
+            At the 3D Printer, I followed the directions provided by the MILL. First thing I had to do was change the filament. Once my filament was ready to go, it was time to print!
+            Before printing, I applied glue stick to the plate, so that my build wouldn't come off the plate and get messed up. Then it was print time!
+            I stayed by the printer to make sure nothing goes wrong.
+            One thing that did happen though was a little bit of spaghetti string came out before the print began and ended up becoming part of the base of the 3D piece.
+            Fortunately, it didn't mess up the test piece, but I wanted to avoid this from happening again.
+            When I showed Josh what happened, he ended up recommending having the build plate adhsion option on for the next print.
+            This way the printer creates a ring around first, and if the filament produced spaghetti like pieces at first, it would be on the ring instead of the 3D pieces.
+            <br>
+            After over an hour my test print was complete, and the piece turned out fine!
+            It was tricky getting the piece off of the glass plate. Joshua showed me the alcohol trick to help remove the piece.
+            <p>
+            <center>
+              <img src="3D_Base_Test.JPG" width="400"></a>
+              <img src="3D_Base_Test_Done.jpg" width="400"></a>
+              <br>
+              <font size="2"><i>Test Print of Base Connector</i></font></center>
+            </p>
+
+            <b>Step 5: Iterating & Re-Printing Connector Pieces</b>
+            <br>
+            My test print was definitely sturdy because of the huge size, so I knew I could make adjustments to make the piece smaller and still be sturdy.
+            After seeing my test print, Elizabeth gave me the suggestion to make 4 base pieces that are bigger in size so they can be sturdy and hold the lamp up while making the top connector pieces to smaller to be less weight and not make the top half of the cube fall through.
+            Because I used Grasshopper, I easily adjusted the shape size to make it half the size of the test piece.
+            I baked the new shape, made a copy, moved the copy in the Z direction to over half an inch and lofted and capped the shape.
+            <p>
+              <center>
+                <img src="GH_BaseConnector.png" width="400"></a>
+                <img src="Rhino_BaseConnector.png" width="400"></a>
+                <br>
+                <font size="2"><i>Grasshopper & Rhino for the Base</i></font>
+              </center>
+            </p>
+
+            I exported this new shape to an STL file and opened the file on DigiLab.
+            On DigiLab, I made copies of my shape, so that I would have 4 base connectors total. I double checked the 3D settings, and this time selected to have a build plate adhesion.
+            I saved the file, and it was time to 3D print again.
+            <p>
+              <center>
+                <img src="3DSettings_Base.png" width="400"></a>
+                <br>
+                <font size="2"><i>DigiLab Settings</i></font>
+              </center>
+            </p>
+            I followed the same process as the first test print.
+            I stayed by the printer to watch the beginning of the print and to ensure nothing went wrong.
+            <p>
+              <center>
+                <img src="3D_Base_Print2.JPG" width="400"></a>
+                <img src="3D_Base_Print3.JPG" width="400"></a>
+                <br>
+                <font size="2"><i>3D Printing Base Pieces</i></font>
+              </center>
+            </p>
+            Since it was getting late on Thursday, I left it overnight. In the morning, I saw an email from the MILL telling me my print finished and was ready to pick up.
+            I went to pick up the pieces and was happy to see it was a success!
+            <p>
+              <center>
+                <img src="3D_Base.jpg" width="400"></a>
+                <br>
+                <font size="2"><i>Base Connector Pieces</i></font>
+              </center>
+            </p>
+
+            <b>Step 6: Creating Additional Connector Pieces</b>
+            <br>
+            With my base connectors done, it was time to think about the top connectors.
+            As I mentioned, Elizabeth brougth up a good point in wanting to make the connectors for the top of the panel.
+            I chose to make the top connectors a smaller/thinner version of the base.
+            I created a new code on Grasshopper by incorporating what I did with the base connectors with the addition of another rectangle to eliminate a giant cube from the connector to reduce its size.
+            Once I was happy with the shape, I did the same exact process of baking, copying, moving the copy in the Z direction, lofting, and capping.
+            <p>
+              <center>
+                <img src="GH_TopConnector.png" width="400"></a>
+                <img src="Rhino_TopConnector.png" width="400"></a>
+                <br>
+                <font size="2"><i>Grasshopper & Rhino for the Top Pieces</i></font>
+              </center>
+            </p>
+            I exported the file into STL and opened it on DigiLab. I did one test print to make sure the piece worked.
+            One minor issue with the test print was that a spaghetti piece got caught onto it so it partially blocked a slot.
+            <p>
+              <center>
+                <img src="3DSettings_Top.png" width="400"></a>
+                <br>
+                <font size="2"><i>DigiLab Settings</i></font>
+                <p></p>
+                <img src="3D_Top_Test.JPG" width="400"></a>
+                <br>
+                <font size="2"><i>Test Print of a Top Connector</i></font>
+              </center>
+            </p>
+            Mostly happy with the test print, I went ahead and printed out the top connector pieces I needed!
+            Again, I followed the same process of 3D printing as before.
+            When my print was finished, I used alcohol to help remove the pieces.
+            Once that was done, I had all my connector pieces!
+            <p>
+              <center>
+                <img src="3D_Top_Print2.jpg" width=400></a>
+                <img src="3D_Top.jpg" width="400"></a>
+                <br>
+                <font size="2"><i>Top Connector Pieces</i></font>
+              </center>
+            </p>
+
+            <b>Step 7: Creating Panels with Illustrator & Laser Cutting Them</b>
+            <br>
+            I chose to use Illustrator to create the panels since they were going to be in 2D, and I'm comfortable using Illustrator to make files for the laser cutter.
+            My initial thought was to put a star on each panel, but I didn't want a huge hole in the middle of the panel.
+            If I wanted to create an outline, I would have to think of a design where part of the star isn't cut so it can stay intact with the cardboard.
+            I ended up doing a Google search on star vectors and found some shooting star vectors I liked that could still have a cool effect without producing a giant hole in the middle of the panel.
+            I used image trace on Illustrator to outline each part of the image and ungrouped the image to remove the white background.
+            I adjusted each shooting star or star to have no fill and to have a stroke of 0.001pt. I placed the image to where I wanted it to be located on the panel.
+            Happy with how it looked, I went to the laser cutter to print out one panel to see how it looked.
+            I was pleased with the test panel, so I went ahead and print out the remaining 3 middle panels.
+            For the top panel, Kira gave me the idea to do a different pattern like a moon.
+            I used a moon and star vector I found and did the same process of image tracing, ungrouping, and adjusting fill and stroke.
+            I cut out the top panel and base panel (which is just a blank square piece) with the laser cutter.
+            <p>
+              <center>
+                <img src="Lamp_Panel_Laser.jpg" width=400></a>
+                <br>
+                <font size="2"><i>Laser Cutting the Panels</i></font>
+              </center>
+            </p>
+
+            <b>Step 8: Putting It Together</b>
+            <br>
+            Now that I had all my connector pieces and my panels laser cut, it was time to put them together!
+            And, ta-da! I'm proud of my finished product.
+            <p>
+              <center>
+                <img src="Lamp_Light.JPG" width="400"></a>
+                <img src="Lamp_Dark.JPG" width="400"></a>
+              </center>
+            </p>
+
+            <p>
+              <b>Peer Teaching:</b> Joshua V for helping me with the export and 3D printing settings and showing me the alcohol trick to remove a 3D piece stuck to the glass plate
+              <br>
+              <b>Creative Shoutouts:</b> Elizabeth & Kira for giving me ideas I incorporated into the design
+              <br>
+              <b>Vector Images:</b>
+              <a href="https://www.123rf.com/photo_100623789_stock-vector-abstract-falling-star-vector-black-shooting-star-with-elegant-star-trail-on-white-background-.html" target="_blank">Shooting Star Vector</a>
+              &
+              <a href="http://photoshopbuzz.com/wp-content/uploads/2010/03/moon17.jpg" target="_blank">Moon Vector</a>
+            </p>
+
+            </div>
+
+            <hr></hr>
+            <a href="https://hcnursalim.github.io">Back to main page</a>
+            <div class="blankspace">
+            </div>
+
+        </div>
+
+    </body>
+</html>

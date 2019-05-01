@@ -90,3 +90,8 @@ hr{
 .blankspace{
   height: 50px;
 }
+
+.rotate90{
+  padding-top: 12%;
+  transform: rotate(90deg);
+}
