@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Hannah's HCDE 598 Digital Fabrication Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <link rel="icon" href="favicon-32x32.png" type="image"/>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Hannah's Assignment 5: Fabricating & CNC Milling a Box</h1>
+            <p>
+            <img src="A5_Box.JPG" width=400></a>
+            </p>
+            <p>
+            Documentation and process are down below.
+            </p>
+            <hr></hr>
+
+            <b><h3>Documentation</h3></b>
+            <b>Source Files:</b>
+            <br>
+            <a href="https://cad.onshape.com/documents/6f03c5c1481caaa8e0d5a3b3/w/d8e2ddf5863d048f30eaa245/e/d9f358e07bba58a257bbf2a5" target="_blank"> Box Design on OnShape </a>
+            <br>
+            <p></p>
+            <b>Snippets of Process:</b>
+            <br>
+            <img src="A5_Mill_FrontBack2.JPG" width="400"></a>
+            <img src="A5_Mill_LeftRight2.JPG" width="400"></a>
+            <img src="A5_Mill_TopBottom2.JPG" width="400"></a>
+            <img src="A5_MilledPieces.jpg" width="400"></a>
+            <img src="A5_BoxAssembled.JPG" width="400"></a>
+            <p></p>
+            <img src="A5_Milling1.gif" width="400"></a>
+            <img src="A5_Milling2.gif" width="400"></a>
+            <hr></hr>
+
+            <div class="content">
+              <center><b><h3>Design</h3></b></center>
+              The goal of this assignment was to design a box with some type of joints and create it with CNC milling.
+              I decided to design a box with fingerjoints.
+              My expectation was for the male and female fingerjoints to match up and be able to pressfit together.
+              I decided to make a square shaped box with the dimensions of 50mmx50mmx50mm.
+              With Joshua's advice about how milling machines aren't as precise, I chose to add dogbones to the corners of the female slots.
+              This will help the toolpath for the 1/32in flat end mill.
+
+              <center><b><h3>Process</h3></b></center>
+              <b>Step 1: Designing the box on OnShape</b>
+              <br>
+              First step was to create the sides of the box on OnShape.
+              I knew I needed to design 3 sides - 1 for front and back, 1 for left and right, and 1 for top and bottom.
+              Using the dimensions I chose, I created the 3 sides.
+              My strategy was to evenly divide slots onto each side: 5mm male part, 5mm female slot, etc.
+              I started with front side. Once that was complete, I started a new sketch for the left/right side/face.
+              <p>
+                <center>
+                <img src="A5_FrontFail.png" width=600></a>
+                <br>
+                <font size="2"><i>OnShape sketch of front face of box</i></font>
+                </center>
+              </p>
+              To be able to visualize the box I chose to use the left plane to make the slots match up at least on one side when compared to the front face of the box.
+              I chose the same strategy. Once I got the side next to the front side to match up, I evenly divided the slots on the other sides of the left face.
+              When that was done, I moved to the top plane to start the 3rd sketch for the 3rd face of the box.
+              I chose to sketch on the top plane to visualize in 3D if the slots match to the front face and left face of the box.
+              I did the same tactic for the slots for the top face as I did for the left face.
+              After I finished creating each side of the box, I extruded each piece.
+              <p>
+                <center>
+                <img src="A5_LeftFail.png" width=600></a>
+                <br>
+                <img src="A5_TopFail.png" width="600"></a>
+                <br>
+                <font size="2"><i>OnShape sketch of left and top face of box</i></font>
+                </center>
+              </p>
+
+              <b>Step 2: Assembling the box on OnShape</b>
+              <br>
+              Now that I had the extrusions for each side, I assembled the pieces together on OnShape to see if my design worked.
+              Sadly the slots didn't match up once I added the copies for each side that I made.
+              This frustrated me as I had already spent a few hours creating the sides of the box.
+              I chose to go back to the drawing board and start from scratch.
+              <p>
+                <center>
+                <img src="A5_BoxAssembly_Fail.png" width=600></a>
+                <br>
+                <font size="2"><i>Failed assembly. Male fingerjoints sit on top of each other.</i></font>
+                </center>
+              </p>
+
+              <b>Step 3: Iterating on the slots and dimensions. AKA do math</b>
+              <br>
+              I still wanted to use the same dimensions of 50mmx50mmx50mm, but I needed to redo the # of slots and actually do math.
+              To do this, I used paper and pencil to sketch out an edge of the front face and what the slots would like.
+              I then used the same measurements and slot numbers for the remaining edges of the front face.
+              After I finished the front face, I moved on to the left face.
+              <p>
+                <center>
+                <img src="A5_Front_Sketch.png" width=600></a>
+                <br>
+                <font size="2"><i>Front face sketch iteration</i></font>
+                </center>
+              </p>
+              Since I had evenly divided the slots along the edges of the front face, I just had to do the opposite for the edges that would connect with the front and back.
+              For the edges that would connect with the top and bottom pieces, I evenly spaced out the slots based on the calculations from the left and right edges.
+              After finishing the left face, I moved to the top face.
+              <p>
+                <center>
+                <img src="A5_Left_Sketch.png" width=600></a>
+                <br>
+                <font size="2"><i>Left face sketch iteration</i></font>
+                </center>
+              </p>
+              For the top face, the edges needed to match the slots that are on the front/back face and left/right face.
+              Using paper and pencil helped me keep the math straight.
+              <p>
+                <center>
+                <img src="A5_Top_Sketch.png" width=600></a>
+                <br>
+                <font size="2"><i>Top face sketch iteration</i></font>
+                </center>
+              </p>
+              Once each side was completed, I extruded them to the thickness of the FR-1 which was 1.55 mm.
+              <p>
+                <center>
+                <img src="A5_BoxNoDB_Extrude.png" width=600></a>
+                <br>
+                <font size="2"><i>Extruded sides of the box</i></font>
+                </center>
+              </p>
+              I tested out my new box design on assembly, and it was a success!
+              <p></p>
+
+              <b>Step 4: Adding dogbones</b>
+              <br>
+              When I asked Joshua questions about the milling machine, he mentioned how the machines aren't as precise because of the shape of the tools.
+              Unlike a laser cutter, milling has an inside corner problem where it has trouble getting all the way to an inside angle because of the tool shape.
+              He suggested adding dogbones to the corner of the female slots and to make the diameter 1/32in in order to use the 1/32 flat end mill tool.
+              I made new sketches using the extruded sides. On each of these new sketches I added dogbone circles with a diameter of 1/32 to the corner of female slots.
+              Once all sides had dogbones, I extruded these new sketches.
+              I then went into Assembly to see what the box would look like with dogbones.
+              <p>
+                <center>
+                <img src="A5_BoxAssembly.png" width=600></a>
+                <br>
+                <font size="2"><i>Preview of box with dogbones</i></font>
+                </center>
+              </p>
+
+              <b>Step 5: Exporting to Kicad and BanTam</b>
+              <br>
+              With the newly extruded sides that include the dogbones, I exported each side into a DXF file.
+              I used the slide deck for reference on what to do on Kicad to get a Gerber file then BamTam to mill.
+              On Kicad, I created a new PCB project for each file.
+              On each corresponding PCB project, I imported the DXF file, set the origin, then exported into a Gerber file.
+              <p>
+                <center>
+                <img src="A5_Kicad_Fail.png" width=600></a>
+                <br>
+                <img src="A5_GerberSettings.png" width=600></a>
+                <br>
+                <font size="2"><i>Kicad DXF import & Gerber export</i></font>
+                </center>
+              </p>
+              I then opened BanTam and opened the front side file first. The tool was automatically set to 1/32in flat end mill.
+              However, I saw red text saying that I would need a smaller tool to target the red areas. The red areas were where I had the 1/32in diameter dogbones.
+              Not wanting to have to switch tools while milling since I had six sides to mill on separate FR-1s, I decided to fix the dogbone sizes.
+              <p>
+                <center>
+                <img src="A5_BanTam_Error.png" width=600></a>
+                <br>
+                <font size="2"><i>When imported, message saying a smaller tool than 1/32in needed</i></font>
+                </center>
+              </p>
+
+              <b>Step 6: Fixing dogbone dimensions & re-exporting</b>
+              <br>
+              I actually used tool sizes on BanTam to help me decide how I should make the dogbone circles bigger.
+              I figured if a 1/32in flat end mill tool can't fully mill a 1/32in diameter dogbone, I should use the next size up as my diameter.
+              The next sized up tool was a 1/16in flat end mill. I decided to try 1/16in diameter for the dogbones.
+              <p>
+                <center>
+                <img src="A5_Front_DBSketch.png" width=600></a>
+                <br>
+                <img src="A5_Left_DBSketch.png" width="600"></a>
+                <br>
+                <img src="A5_Top_DBSketch.png" width="600"></a>
+                <br>
+                <font size="2"><i>Adding dogbones</i></font>
+                </center>
+              </p>
+              I went back to OnShape and changed the dogbone sizes on each of the sketch files that contained the dogbones.
+              I re-extruded these shapes and re-exported to DXF files.
+              <p>
+                <center>
+                <img src="A5_BoxDB_Extrude.png" width=600></a>
+                <br>
+                <font size="2"><i>Extruded sides with dogbones</i></font>
+                </center>
+              </p>
+              I followed the same steps to import each file to Kicad then export into Gerber.
+              This time when I opened the Gerber file on BanTam, there were no red marks or a message that told me I would need a smaller tool.
+              Pleased, I was ready to start milling!
+              <p></p>
+
+              <b>Step 7: Finally milling time!</b>
+              <br>
+              I followed the slide deck to set up the machine and BanTam settings and was able to set up easily with no problem.
+              I first opened the Gerber file for the front and back sides of the box.
+              I used my calipers to measure the width, height, & thickness of the FR-1 piece and entered the information in the appropriate area on BanTam.
+              I had an extra FR-1 board that I chose to use as my sandwich piece for all the sides I needed to mill.
+              I made my FR-1 sandwich, measured its thickness, then calculated for my Z offset.
+              I entered that into the corresponding area on BanTam. I adjusted where I wanted the mill to start in terms of x & y on the board.
+              <p>
+                <center>
+                <img src="A5_Front_BanTamSettings.png" width=600></a>
+                <br>
+                <font size="2"><i>BanTam settings for front and back pieces</i></font>
+                </center>
+              </p>
+              I applied double sided tape to the bottom of the sandwich and placed it on the platform, letting the edge hang over a little bit to be able to remove the board off the platform when finished.
+              It was go time! I calibrated the tool and re-homed the machine and then clicked "Start milling".
+              <p>
+                <center>
+                <img src="A5_Mill_FrontBack1.JPG" width=400></a>
+                <br>
+                <font size="2"><i>Milling process for front and back pieces</i></font>
+                </center>
+              </p>
+              About 10 minutes later, my first piece was done!
+              <p>
+                <center>
+                <img src="A5_Piece1Complete.JPG" width=400></a>
+                <br>
+                <font size="2"><i>Successful first mill!</i></font>
+                </center>
+              </p>
+              I have to say removing the sandwich off the platform then separating the sandwich was one of the more time-consuming parts.
+              Once I freed the first piece, I started the whole process again for the next piece.
+              Since my front and back piece are the same, I kept the same file on BanTam and just replaced the FR-1 sandwich.
+              Once I had my front and back piece, I changed the BanTam file to the left and right face of the box.
+              I checked the settings and started the milling process.
+              <p>
+                <center>
+                <img src="A5_Left_BanTamSettings.png" width=600></a>
+                <br>
+                <img src="A5_Left_BanTamProcess.png" width=600></a>
+                <br>
+                <font size="2"><i>BanTam settings & mid-process for left and right pieces</i></font>
+                <p>
+                  <img src="A5_Mill_LeftRight1.JPG" width="400"></a>
+                  <br>
+                  <font size="2"><i>Milling in progress</i></font>
+                </p>
+                </center>
+              </p>
+              When the left and right pieces were done, I re-did the same process for the top and bottom pieces.
+              Like before, I checked the settings first.
+              <p>
+                <center>
+                <img src="A5_Top_BanTamSettings.png" width=600></a>
+                <br>
+                <img src="A5_Top_BanTamProcess.png" width=600></a>
+                <br>
+                <font size="2"><i>BanTam settings & mid-process for top and bottom pieces</i></font>
+                </center>
+              </p>
+              Then I started milling!
+              <p>
+                <center>
+                <img src="A5_Mill_TopBottom1.JPG" width=400></a>
+                <br>
+                <font size="2"><i>Successful first mill!</i></font>
+                </center>
+              </p>
+
+              <b>Step 7b: One milling issue</b>
+              <br>
+              Overall, milling went smoothly for me. I was able to use only one tool size, so I didn't have to switch tools during the process.
+              The one slight problem I ran into was my sandwich not being taped strongly to the platform for one of the milling instances.
+              After each piece finished milling, there was a lot of sawdust on the platform.
+              When I was doing the set up process for milling the left/right face of my box, I didn't clear out some of the sawdust on the platform.
+              I taped my sandwich onto the somewhat dusty platform, thinking "Oh it sticks, so it's okay".
+              However, when the milling just started, a few seconds in my sandwich unstuck itself from the platform, and basically swung around in a 180 degree rotation.
+              I hit the emergency power button, rehomed the machine, took the sandwich off the platform, wiped the platform with a paper towel, retaped the sandwich and stuck it to the platform as firmly as possible.
+              Fortunately, this all happened at the very beginning, so I was able to reuse the same FR-1 sandwich.
+              After this incident, I made sure to clear off all sawdust from the platform after each piece, and fortunately didn't run into this issue again.
+
+              <p></p>
+
+              <b>Step 8: Putting the box together</b>
+              <br>
+              I started assembling my box each time a piece finished milling.
+              This was my way of making sure I did the right calculations and such.
+              Each piece I created was a success! The front and back pieces connected with the left and right pieces.
+              The top and bottom connected to these pieces easily as well.
+              I was happy that my calculations were correct and that the pieces fit together nicely, yay!
+
+              <p>
+                <center>
+                  <img src="A5_Box.gif" width=400></a>
+                </center>
+              </p>
+
+              <b>Peer Teaching:</b> Lukas S. for advice on CAD adjustments in order for the pieces to properly fit together since FR-1s aren't pliable like cardboard
+              & Joshua for dogbone advice and slide deck guidelines!
+              <br>
+            </div>
+
+            <hr></hr>
+            <a href="https://hcnursalim.github.io">Back to main page</a>
+            <div class="blankspace">
+            </div>
+
+        </div>
+
+    </body>
+</html>
