@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Hannah's HCDE 598 Digital Fabrication Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <link rel="icon" href="favicon-32x32.png" type="image"/>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Hannah's Assignment 6: Molding and Casting</h1>
+            <p>
+            <img src="A6_Penguins.JPG" width=400></img>
+            </p>
+            <p>
+            Documentation and process are down below.
+            </p>
+            <hr></hr>
+
+            <b><h3>Documentation</h3></b>
+            <b>Source Files:</b>
+            <br>
+            <a href="https://drive.google.com/file/d/1huFvNpatzNd_82uGInrl-3UKfYGQnvvi/view?usp=sharing" target="_blank">Penguin Mold STL File</a>
+            <br>
+            <a href="https://drive.google.com/open?id=1Zh5NJkXjfo295Wqzw-csBFPcHUnX0k92" target="_blank">Penguin Mold Rhino File</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1lnF5WbqGUvn9QhEE5OfRu8zh7mnJl3eS/view?usp=sharing" target="_blank">Penguin Fusion 360 G Code</a>
+            <p></p>
+
+            <b>Snippets of Process:</b>
+            <br>
+            <iframe src="https://giphy.com/embed/2UCt7zbmsLoCXybx6t" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <br>
+            <font size="2"><i>How I felt through the designing and milling process</i></font>
+
+            <p></p>
+            <img src="A6_Milling1.JPG" width="400"></img>
+            <img src="A6_Milling3.JPG" width="400"></img>
+            <img src="A6_WaxMold1.JPG" width="400"></img>
+            <img src="A6_SiliconeMold2.jpg" width="400"></img>
+            <img src="A6_MoldPlaster.JPG" width="400"></img>
+            <img src="A6_Penguins2.JPG" width="400"></img>
+            <hr></hr>
+
+            <div class="content">
+              <center><b><h3>Design</h3></b></center>
+              This assignment was all about molding and casting - creating a meta mold out of machinable wax or 3D printing, a silicone mold, and casting plaster into the mold.
+              My idea for this assignment was to create a 2 part penguin mold.
+              Referencing the student example from class, I chose to do a 2 part mold.
+              I found a penguin STL on <a href="https://www.thingiverse.com/thing:1899207" target="_blank"> Thingiverse</a> and used it for my master part.
+              For the mold itself, I designed the box, sprue, and keys so the two parts can fit together.
+              I chose the machinable wax route for the silicone mold's mold. In other words, the machinable wax is the meta mold.
+              Like everyone else in the class, I used silicone mix for the mold and plaster for the end result.
+
+              <center><b><h3>Process</h3></b></center>
+              <b>Step 1: Finding my master part</b>
+              <br>
+              I wanted to make a fun mold, so I went on Thingiverse to find my master part.
+              I found a cute penguin STL (cited in previous section and at the end of this page) and used that as my master part.
+              This was the easiest part of the entire process of this assignment.
+              <p></p>
+
+              <b>Step 2: Designing the mold</b>
+              <br>
+              To start the whole molding & casting process of the penguin, I had to design my meta mold.
+              I used Rhino as my CAD software, so I can follow along with the in-class demo video.
+              I used calipers to measure the machinable wax to determine the size of each part of my 2 part meta mold.
+              The machinable wax was 3in x 7in x 1.5 in.
+              Using these measurements, I decided the width, height & depth of my meta molds.
+              I wanted to leave extra machinable wax just in case something went wrong.
+              I used the rectangle tool, extrusion tool, and boolean difference to make 2 mold boxes. The overall box dimension was 77mm tall and 45 mm wide.
+              The bigger box had a depth of 1.5 in and the smaller box had a depth of 1.25 in. Using boolean difference I subtracted the smaller box from the big box.
+              I imported the penguin STL file. I then used scale to make the penguin into a size that would fit the mold.
+              I used MeshSplit to divide the penguin in half down the middle for symmetrical parts.
+              <p>
+                <center>
+                  <img src="A6_MeshSplit.png" width=400></img>
+                </center>
+              </p>
+              Then I put each half into its respective mold box.
+              Once I had the two halves in each mold, I created a sprue.
+              The sprue is basically the part that allows for plaster to pour into the 2 part mold.
+              I used the circle tool and extruded the circle to make the sprue.
+              I then used the split tool to cut the cylinder in half and placed it in the appropriate area in each box mold.
+              Once the sprue part was done, I had to create the keys. The keys fit together for the 2 part mold to stick together.
+              I used the circle tool and extruded and capped the circle to create cylinder shaped keys.
+              I had 4 pairs of keys total. 2 pairs were one bigger size, and the other 2 pairs were smaller.
+              The hard part about making the keys was aligning them together.
+              I also had to make the female keys slightly bigger so the male keys can fit.
+              I used boolean difference to make the keys that needed to go into the box.
+              <p>
+                <center>
+                  <img src="A6_Keys.png" width="400"></img>
+                  <br>
+                  <font size="2"><i>Boolean difference to make the keys part "sink" into the box on left</i></font>
+                </center>
+              </p>
+              Though I had my STL basically ready to go to the milling process, there were a lot of minor adjustments I needed to make to make sure the 2 parts would fit well together.
+              Working on the file itself was frustrating as I spent hours on it to "perfect" it.
+
+              <p></p>
+
+              <b>Step 3: Fusion 360</b>
+              <br>
+              When I finished my Rhino file, I exported it into STL. I then opened the STL on Fusion 360.
+              I followed the class demo for the Fusion 360 set up for the toolpath.
+              An issue I had with importing into Fusion 360 is that the scaling became way off.
+              My molds ended up being much bigger than the original size. I had to scale it down.
+              Using math (dividing the original size by the new large size), I scaled down the mold to the appropriate size.
+              I then went into Manufacture mode and went into set up to set up my file for toolpathing with the mill.
+              After set-up, I used adaptive cooling to choose the tool and stepdown size to create the toolpath.
+              I used the simulation tool to see the toolpath. I then went into post process and generated the g code for OtherMill.
+              <p>
+                <center>
+                  <img src="A6_Setup.png" width="200"></img>
+                  <img src="A6_Stock.png" width="200"></img>
+                  <br>
+                  <font size="2"><i>Fusion 360 set up settings</i></font>
+                  <p></p>
+                  <img src="A6_AdaptiveCooling1.png" width="200"></img>
+                  <img src="A6_AdaptiveCooling2.png" width="200"></img>
+                  <br>
+                  <font size="2"><i>Fusion 360 adaptive cooling settings</i></font>
+                </center>
+              </p>
+
+              <b>Step 4: Checking toolpath on BanTam (which led to confusion and frustration)</b>
+              <br>
+              I wanted to check out the toolpath that Fusion 360 created on BanTam.
+              The whole Fusion 360 set up was meant for the BanTam OtherMill milling machine.
+              Using the video of the in class demo, I played around with the g code file to place the molds into a proper location, so that it could be milled.
+              When I went into preview mode on BanTam, it showed that my molds wouldn't turn out the way I designed them.
+              This was frustrating cause I had no idea how to fix it, so I knew I would have to go to office hours.
+              <p>
+                <center>
+                  <img src="A6_FusionToolpath.png" width="500"></img>
+                  <br>
+                  <font size="2"><i>Generated toolpath from Fusion 360</i></font>
+                  <p></p>
+                  <img src="A6_BanTamPreview.png" width="500"></img>
+                  <br>
+                  <font size="2"><i>Preview on BanTam</i></font>
+                </center>
+              </p>
+
+              <b>Step 5: Using the Shopbot at Fluke</b>
+              <br>
+              I went to office hours that Nadya held in Fluke on Sunday to get help with my file and with milling my machinable wax.
+              I wanted to know what was going on with my file that led to the preview shown on BanTam.
+              The first time Nadya looked at my file she mentioned about the size of the tool and how much room there is for the tool to get through certain areas.
+              With that information I made adjustments to where the keys were located in the molds and updated my STL.
+              <p></p>
+              Another thing I learned was that because we were using the Shopbot to mill, the Fusion 360 g code file wasn't necessary here.
+              The g code from Fusion 360 can be used when using the OtherMill (which I provide up above).
+              All I needed was an STL file to give to Nadya.
+              <p></p>
+              When I was ready with my updated STL file, Nadya took another look to make sure it was good to go with the Shopbot and the associated Shopbot program.
+              One thing I didn't consider was the wing of the penguin and how it was propped up.
+              Nadya pointed this out and reminded me that the mill wouldn't be able to get into certain parts to create the wing.
+              If I had 3D printed, the wing wouldn't have been an issue.
+              I had to re-adjust and come up with a new solution: slice the penguin differently.
+              Instead of down the middle to have 2 symmetrical halves, I had to slice down the middle to separate the front and back of the penguin.
+              I wanted to use the same mold I already created to save time and have my file ready for when it was my turn to go on the Shopbot.
+              I re-imported the penguin file into Rhino and used scale to make the penguin the right size to fit in the mold boxes.
+              Then I used MeshSplit to slice the penguin in the new way.
+              I placed each half on its respective mold.
+              <p>
+                <center>
+                <img src="A6_RhinoFinal.png" width="500"></img>
+                <br>
+                <font size="2"><i>Updated mold on Rhino</i></font>
+                </center>
+              </p>
+              Nadya helped me with boolean difference and boolean union to readjust the depth of the molds, so there would be less to mill out of the machinable wax.
+              <p>
+                <center>
+                  <img src="A6_STL.png" width="500"></img>
+                </center>
+              </p>
+              Once that was done my FINAL STL file was ready, and Nadya used the Shopbot program to create a toolpath.
+              The file was put onto the Shopbot, I hotglued the machinable wax to a woodenplatform, and with some calibration, it was time to start the rough toolpathing!
+              Once the rough toolpathing was complete, Nadya switched to the rough fine toolpathing.
+              Half an hour or so later, my meta mold was ready!
+              <p>
+                <center>
+                <img src="A6_Milling1.gif" width="400"></img>
+                <img src="A6_Shopbot1.gif" width="400"></img>
+                <br>
+                <img src="A6_Milling2.JPG" width="400"></img>
+                <br>
+                <font size="2"><i>Milling the machinable wax</i></font>
+                </center>
+              </p>
+
+              <b>Step 6: Cleaning up the wax meta mold</b>
+              <br>
+              I was happy with how my machinable wax meta mold came out.
+              The only minor thing was that there was some excess wax on the sides of the mold.
+              I went to the MILL to use the knives they have to clean up some of the excess wax in my mold.
+              <p>
+                <center>
+                <img src="A6_WaxMold2.JPG" width="400"></img>
+                <br>
+                <font size="2"><i>Removed as much excess wax as possible</i></font>
+                </center>
+              </p>
+
+              <b>Step 7: Making the silicone mold</b>
+              <br>
+              Now that I had the meta mold ready, it was time for the silicone mold creation, and to do that, I used Oomoo 30 smooth-on solicone mold making kit.
+              Following the instructions, I mixed equal parts of Part A and Part B together.
+              I made sure that it was fully mixed with no streaks of either color left.
+              When the silicone mix was ready, I poured it into the mold and let it sit for 6 hours.
+              <p>
+                <center>
+                <img src="A6_SiliconeMaking.JPG" width="400"></img>
+                <br>
+                <font size="2"><i>Silicone mix poured into mold</i></font>
+                </center>
+              </p>
+
+              And voila! The silicone mold turned out.
+              I had a little trouble getting the silicone molds out of the wax meta mold.
+              I used a knife to scrape the sides to help loosen it then gently pull the silicone mold out.
+              I tested the 2 part mold to make sure the keys fit, and it did!
+              <p>
+                <center>
+                  <img src="A6_SiliconeMold1.jpg" width="400"></img>
+                </center>
+              </p>
+
+              <b>Step 8: Plastering 4 penguins</b>
+              <br>
+              Now with the silicone mold ready, it was time to plaster!
+              The easy part of this process was putting the 2 part mold together and putting masking tape around to firmly hold the mold.
+              I used the plaster that Lukas had bought and shared with the class.
+              I wasn't entirely sure how to use the plaster as the instuctions on the box involved weighing and using an electric mixer, and I don't have a scale or mixer.
+              Fortunately, some classmates had already used the plaster and shared information on Slack.
+              Shout out to Tien for sharing the ratio and method she used to mix.
+              Using a spoon and a spare cup, I mixed 3 parts of plaster to 1 part water. I used a spoon for the 3:1 ratio.
+              I mixed the plaster until the water and plaster mixed fully then poured the plaster into the mold.
+              <p>
+                <center>
+                  <img src="A6_FirstPlaster.JPG" width="400"></img>
+                </center>
+              </p>
+              I set my timer to 20 minutes and hoped that the first penguin would turn out.
+              And it did! The only minor issue was that the tip of one wing didn't form, but that's okay.
+              <p>
+                <center>
+                  <img src="A6_FirstPlaster_Done.jpg" width="400"></img>
+                </center>
+              </p>
+              Since the first penguin turned out fine. I was ready to do the remaining 3 required for this assignment.
+              I just followed the same process I did for the first penguin.
+              Over an hour later, I had all 4 penguins!
+              <p>
+                <center>
+                  <img src="A6_Penguins2.JPG" width="400"></img>
+                </center>
+              </p>
+
+              <b>Peer Teaching:</b> D'Marcus Butler for Rhino tips & tricks; Tien for the plaster information; Nadya for helping me make the mold on the Shopbot in Fluke
+              <br>
+              <b>Additional Credit:</b> Lukas for providing the plaster that we were all able to use
+              <br>
+              <b>Source Credit:</b> I found a penguin STL on Thingiverse and used it for my master part. The penguin design can be found <a href="https://www.thingiverse.com/thing:1899207" target="_blank"> here</a>.
+              <p></p>
+            </div>
+
+            <hr></hr>
+            <a href="https://hcnursalim.github.io">Back to main page</a>
+            <div class="blankspace">
+            </div>
+
+        </div>
+
+    </body>
+</html>
